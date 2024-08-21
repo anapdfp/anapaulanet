@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ana Paula Resume @ SKOBA.net" />
+	  <meta name="author" content="Ana Paula Pimentel" />
+    <link rel="shortcut icon" href="http://skoba.net/favicon.ico" />
+
+    <title>[C.V.] Ana Paula Pimentel</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- External styles for this template -->
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mdb.min.css">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38295731-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-38295731-3');
+        </script>
+      <!-- End Google Analytics -->
+
+<!-- Custom styles for this template -->
+<style type="text/css">
+
+
+
+
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.nav-pills>li{float:left}
+.nav-pills>li>a{border-radius:4px}
+.nav-pills>li+li{margin-left:2px}
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{color:#ffffff;background-color:#00bc8c}
+
+
+
+body {
+  position: relative;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' stroke-opacity='0.46'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .txt-capital {
+          font-family: 'Roboto Condensed', sans-serif;
+          margin-top: 10px;
+          text-transform: uppercase;
+        }
+
+        /* timeline */
+        /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.tlcontainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.tlcontainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #6c757d;
+  border: 4px solid #1c313a;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.tlcontent {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .tlcontainer {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .tlcontainer::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+</style>
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+      <div class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+        <div class="container">
+
+          <div class="navbar-header">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main">
+           <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+        </div>
+
+            <div class="navbar-collapse collapse" id="navbar-main">
+
+              <ul class="nav navbar-nav mr-auto nav-pills">
+                <li>
+                  <a class="blog-nav-item" href="index.html"><i class="fa fa-home"></i></a>
+                </li>
+                <li>
+                  <a class="blog-nav-item" href="#skills"><i class="fa fa-chevron-right"></i> Skills & Tools</a>
+                </li>
+                <li>
+                  <a class="blog-nav-item" href="#xp"><i class="fa fa-chevron-right"></i> Work Experience</a>
+                </li>
+                <li>
+                  <a class="blog-nav-item" href="#education"><i class="fa fa-chevron-right"></i> Education</a>
+                </li>
+                <li>
+                  <a class="blog-nav-item" href="#languages"><i class="fa fa-chevron-right"></i> Languages</a>
+                </li>
+                <li>
+                  <a class="blog-nav-item" href="#other"><i class="fa fa-chevron-right"></i> Independent Coursework</a>
+                </li>
+              </ul>
+
+
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="portfolio.html"><i class="fa fa-file-image-o"></i> Portfolio</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+
+      <div class="container blog-main">
+
+
+      <div class="row main">
+
+        <div class="col-md-9">
+
+
+
+      <div class="blog-header">
+        <h1 class="blog-title"><span class="lead blog-description" >[Resume]</span> </h1>
+         <h1 class="cover-heading blog-title">A<span class="blog-title-small">na</span> P<span class="blog-title-small">aula</span> P<span class="blog-title-small">imentel</span></h1>
+                  <h3 class="text-muted txt-capital">Project and Data Management /<br/>
+                                        Online Education /Front-End and Android Dev</h3>
+      </div>
+
+
+          <section id="skills">
+		  <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Skills & Tools</h2>
+                        <hr class="alert-dark">
+              <p class="blog-post-meta"></p>
+
+              <div class="card-columns">
+
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Project Management</div>
+                  <div class="card-body">
+                    <p class="card-text">Years of experience in Project and Product management, including hiring and building teams, technical writing, documentation, task assignment, team training, task evaluation and quality assurance. </p>
+                  </div>
+            </div>
+
+
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Data Management</div>
+                  <div class="card-body">
+                    <p class="card-text">
+                        > Practical Statistics<br/>
+                        > SQL and Python libraries like NumPy and Pandas<br/>
+                        > Data Wrangling<br/>
+                        > Data Visualization with matplotlib (Python) and programmable Dashboards using Microsoft Excel and Google Sheets
+</p>
+                  </div>
+            </div>
+
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Front-End/Android/Web Development</div>
+                  <div class="card-body">
+                    <p class="card-text">
+                        > HTML and CSS<br/>
+                        > JavaScript and jQuery<br/>
+                        > Frameworks (Bootstrap)<br/>
+                        > Content Management Systems (Joomla, Wordpress and Drupal)<br/>
+                        > Google Cloud/Domains<br/>
+                        > SEO and Analytics<br/>
+                        > Android Apps (Android Studio, Java, SQL and JSON)<br/>
+                        > Software version control systems (Github)<br/>
+</p>
+                  </div>
+            </div>
+
+
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Journalism</div>
+                  <div class="card-body">
+                    <p class="card-text">Press releases, media coverage, social network presence, good writing, news design and layout using QuarkXpress. Video production and editing (Adobe Premiere and After Effects).
+ </p>
+                  </div>
+            </div>
+
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Designer</div>
+                  <div class="card-body">
+                    <p class="card-text">Prototyping, production and documentation. Knowledge in the use of personas, user scenarios, task flows, wireframes, site maps, mockups, prototypes,  accessibility and visual design. Extensive usage of Photoshop, Fireworks, PowerPoint, Visio.</p>
+                  </div>
+            </div>
+
+			<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Online Education</div>
+			  <div class="card-body">
+                  <p class="card-text">
+                      LMS Softwares (especially Moodle and Dokeos), media transposition (books to digital), JavaScript and JQuery and Adobe Flash (deprecated).</p>
+			  </div>
+			</div>
+
+              </div>
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+		  <section id="xp">
+		  <hr class="featurette-divider" />
+          <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Work experience</h2>
+              <hr class="alert-dark">
+
+<div class="timeline">
+    
+ <div class="tlcontainer right">
+    <div class="tlcontent">
+      <h2>2021 – 2023</h2>
+      <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar img-thumbnail" src="assets/img/accn.jpg" alt="HAR">
+                <p class="txt-capital tl-title-small">Business and Integration Arch Manager @ Accenture </p>
+                    <p class="small">
+                        > Project Management in a hybrid enviroment (Brazil and LatAm BPO Mobilization team) <br/>
+                        > User Provisioning and Vendor Management dealing with access of corporate systems and applications, developing technical documentation regarding Onboarding and Roll off, considering data access and security policies <br/>
+                        > Business Process Improvement working with Innovation and Automation of projects <br/>
+                        > Ensure good communication between Operation and technology team (Clients and Internal) <br/>
+                        > Data Analysis: Creation and maintenance of dashboards, schedules and trackers for clients and for internal quality assurance metrics.
+                    </p>
+            </div>
+    </div>
+  </div>    
+    
+  <div class="tlcontainer left">
+    <div class="tlcontent">
+      <h2>2015 – 2021</h2>
+            <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar img-thumbnail" src="assets/img/hclgoogle.jpg" alt="HCL-Google">
+                <p class="txt-capital tl-title-small">Senior Lead Technical Analyst @ HCL Technologies (onsite at Google Pittsburgh)</p>
+                    <p class="small">
+                        > Team Management, including Evaluation and Quality Assurance <br/>
+                        > Communication between Client and Operations team<br/>
+                        > Hiring for USA and Europe operations team<br/>
+                        > Peer-to-peer training, knowledge sharing and documentation writing<br/>
+                        > Develop reports using Data analysis and management skills<br/>
+                        > Work with various Google Tools<br/>
+                        > Build product expertise through research and analysis of data
+                    </p>
+            </div>
+    </div>
+  </div>
+  <div class="tlcontainer right">
+    <div class="tlcontent">
+      <h2>2015 – 2021</h2>
+      <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar img-thumbnail" src="assets/img/har.png" alt="HAR">
+                <p class="txt-capital tl-title-small">Volunteer Dog Coach @ Humane Animal Rescue</p>
+                    <p class="small">
+                        > Tend to the needs of shelter dogs (training, walking, playing and doing enrichment activities)<br/>
+                        > Manage a team of dog walkers, coaching and shadowing new members, doing paperwork like tracking activities and dogs and their needs.
+                    </p>
+            </div>
+    </div>
+  </div>
+  <div class="tlcontainer left">
+    <div class="tlcontent">
+      <h2>2012 – 2015</h2>
+      <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar img-thumbnail" src="assets/img/ufmg.png" alt="UFMG">
+                <p class="txt-capital tl-title-small">Lead Technical Analyst and Project Manager @ UFMG (Federal University of Minas Gerais State)</p>
+                    <p class="small">
+                        > Development of multimedia content for e-learning courses <br/>
+                        > Staff training and technical support on Moodle platform<br/>
+                        > Front-End Development of websites using content management systems (Wordpress and Joomla) and Bootstrap framework <br/>
+                        > Project management
+                    </p>
+            </div>
+    </div>
+  </div>
+  <div class="tlcontainer right">
+    <div class="tlcontent">
+      <h2>2011 – 2012</h2>
+      <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar" width="170px" src="assets/img/aorta.jpg" alt="Aorta">
+                <p class="txt-capital tl-title-small">Digital Media and Front-End Developer @ Pontomobi / Aorta Entretenimento</p>
+                    <p class="small">
+                        > Front-End developer and UX/UI Designer for mobile sites and apps<br/>
+                        > Responsible for technical writing, SOPs and other documentations of products<br/>
+                        > Bridge between Engineers and Design team
+                    </p>
+            </div>
+    </div>
+  </div>
+  <div class="tlcontainer left">
+    <div class="tlcontent">
+      <h2>2010 – 2011</h2>
+      <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar img-thumbnail" src="assets/img/ufmg.png" alt="UFMG">
+                <p class="txt-capital tl-title-small">Technical Support  @ UFMG (Federal University of Minas Gerais State)</p>
+                    <p class="small">
+                        > Technical support for Moodle platform during online courses <br/>
+                        > Production and publication of a Moodle platform's tutorial<br/>
+                        > Staff training on Moodle platform <br/>
+                        > Development of multimedia content for online courses
+                    </p>
+            </div>
+    </div>
+  </div>
+  <div class="tlcontainer right">
+        <div class="tlcontent">
+      <h2>2009 – 2010</h2>
+      <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar img-thumbnail" src="assets/img/teacom.png" alt="Teacom">
+                <p class="txt-capital tl-title-small">FrontEnd Dev @ TEACOM - Educação e Treinamento</p>
+                    <p class="small">
+                        > Technical support for DOKEOS E-learning Suite<br/>
+                        > Development of multimedia content for online courses
+                    </p>
+            </div>
+    </div>
+  </div>
+  <div class="tlcontainer left">
+    <div class="tlcontent">
+      <h2>2006 – 2009</h2>
+      <div class="card text-white bg-transparent">
+                <img class="card-img-top me-sidebar img-thumbnail" src="assets/img/guia.gif" alt="Guia Entrada Franca">
+                <p class="txt-capital tl-title-small">Journalist and Web Designer @ Rocknews and Guia Entrada Franca</p>
+                    <p class="small">
+                        > Journalist and online content creator responsible for media coverage, edition, publication and tech support on cultural events websites Rocknews and Guia Entrada Franca.
+                    </p>
+            </div>
+    </div>
+  </div>
+</div>
+
+
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+		  <section id="education">
+              		  <hr class="featurette-divider" />
+          <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Education</h2>
+              <hr class="alert-dark">
+			<ul>
+				<p><i class="fa fa-chevron-right"></i> Postgraduation (<em>lato sensu</em> ) in Digital Communication and Multimedia <br>
+				<small>@ PUC-MG (Pontifical Catholic University of Minas Gerais State)<br>  </small>
+                    <span class="badge badge-secondary">Years: 2011 - 2012</span></p>
+				<p><i class="fa fa-chevron-right"></i> Bachelor's Degree in German Language and Literature <br>
+				<small>@ PUC-MG (Pontifical Catholic University of Minas Gerais State) <br> </small>
+                    <span class="badge badge-secondary">Years: 2004 - Incomplete</span></p>
+				<p><i class="fa fa-chevron-right"></i> Bachelor's Degree, Communication Studies, Journalism, and Related Programs	 <br>
+				<small>@ PUC-MG (Pontifical Catholic University of Minas Gerais State) <br>  </small>
+                    <span class="badge badge-secondary">Years: 2003 - 2006</span></p>
+            </ul>
+
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+
+
+            <section id="languages">
+              		  <hr class="featurette-divider" />
+          <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Languages</h2>
+              <hr class="alert-dark">
+			<ul>
+				<p><i class="flag flag-pt"></i> / <i class="flag flag-br"></i> Portuguese Native </p>
+				<p><i class="flag flag-gb"></i> / <i class="flag flag-us"></i> English C2 </p>
+				<p><i class="flag flag-es"></i> Spanish B2 </p>
+				<p><i class="flag flag-de"></i> German A2 </p>
+                <p><i class="flag flag-fr"></i> / <i class="flag flag-be"></i> French A1 - *currently studying* </p>
+            </ul>
+
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+
+<section id="other">
+<hr class="featurette-divider" />
+<div class="blog-post">
+<h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Independent Coursework </h2>
+<hr class="alert-dark">
+
+<ul>
+  <p class=lead><i class="fa fa-chevron-right"></i> Bertelsmann Technology Data Science Nanodegree @ Udacity</p>
+    <p class="">Nanodegree Data Management Course including: Practical Statistics, Data
+    Analysis, Data Wrangling and Data Visualization. Carried out with a
+    scholarship provided by Bertelsmann Technology.</p>
+
+  <p class=lead><i class="fa fa-chevron-right"></i> Google Nanodegree Android Basics @ Udacity</p>
+    <p>Nanodegree Android Development Course. Accomplished with a
+    scholarship provided by Google</p>
+
+  <p class=lead><i class="fa fa-chevron-right"></i> Front-End Development @ FrontIn BH </p>
+    <p>Participation in two editions (2012/2013) of the Front-End Developers
+    Conference Front In BH, in Belo Horizonte</p>
+
+  <p class="lead">XXVI Congress on Communication Sciences (2003)</p>
+      <p>Participation in the XXVI Brazilian Congress on Communication Sciences,
+      of the Brazilian Society for Interdisciplinary Studies in Communication
+      (Intercom)
+      </p>
+
+  <p class=lead><i class="fa fa-chevron-right"></i> First Certificate in English (Cambridge FCE) @ Cultura Inglesa </p>
+    <p>Achievement of the Cambridge University English Certificate through
+Cultura Inglesa BH</p>
+
+  <p class=lead><i class="fa fa-chevron-right"></i> Figure Drawing @ Escola de Belas Artes - UFMG </p>
+    <p>Extension course from Fine Arts School of UFMG</p>
+
+  <p class=lead><i class="fa fa-chevron-right"></i> Webdesign @ Departamento de Ciencia da Computacao (Department of Computer Science) - UFMG </p>
+  <p>Web Development/Design (Macromedia softwares: Fireworks, Flash and
+Dreamweaver)</p>
+
+</ul>
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+
+
+
+        </div><!-- /.blog-main -->
+
+
+
+        <div class="col-md-3 blog-sidebar" >
+          <div class="sidebar-module sidebar-module-one">
+
+			<img src="meself42.png" class="me-sidebar img-fluid"/>
+            <h4 class="txt-capital">About me</h4>
+              <div class="small">
+                <p><i class="flag flag-br"></i>Brazilian living in <i class="flag flag-be"></i>Belgium with 7y of experience working in the <i class="flag flag-us"></i></p>
+                <p>For 2 years I've worked as a Business and Integration Arch Manager at Accenture and I was responsible for a benchmark project due to the large volume of accesses provisioned and validated on time. I've also received excellent feedback concerning data security, knowledge transfer and operational metrics.</p>
+                <p>Before that, for 6 years, I worked as a Team Manager and Data Analyst for HCL Technology at Google Pittsburgh.
+                  I managed three different teams, hired and trained new team members, worked with data management and quality assurance as well as provided support for other leads and for the client.</p>
+                <p>I also have an extensive experience with online education developing and managing web courses for governmental programs at a public federal university in Brazil,
+                  where I also provided staff training and technical support for professors and researchers.</p>
+                <p>In general, I love to manage data, projects and work with people. </p>
+              </div>
+              <hr class="alert-dark">
+			<p class="txt-capital">Contact </p>
+                <p><i class="flag flag-be"></i> <i class="fa fa-phone"></i> +32 477 77 18 40 <br>
+				<i class="flag flag-br"></i> <i class="fa fa-phone"></i> +55 31 478 2167 <br>
+          
+				    <i class="fa fa-envelope"></i> anapauladfp @ gmail</p>
+		  </div>
+          <div class="sidebar-module sidebar-module-two">
+            <h4 class="txt-capital">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="portfolio.html"><i class="fa fa-file-image-o"></i> Portfolio</a></li>
+			  <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/anapp/" target="_blank">LinkedIn</a></li>
+              <li><i class="fa fa-github-alt"></i> <a href="http://github.com/acideater/" target="_blank">GitHub</a></li>
+              <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/anapauladfp" target="_blank">Twitter</a></li>
+
+            </ol>
+          </div>
+
+
+          <div class="sidebar-module sidebar-module-three">
+            <h4 class="txt-capital">Navigate</h4>
+            <ol class="list-unstyled">
+              <li><i class="fa fa-chevron-right"></i> <a href="#skills">Skills and tools</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#xp">Work experience</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#education">Education</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#languages">Languages</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#other">Independent Coursework</a></li>
+            </ol>
+
+          </div>
+
+          <div class="sidebar-module sidebar-module-four">
+            <h4 class="txt-capital">PDF</h4>
+            <p class="small">Here you can download my resume in PDF</p>
+            <ol class="list-unstyled">
+              <li><i class="flag flag-us"></i> <a href="assets/doc/anap-cv_202301.pdf">English Version</a></li>
+            </ol>
+
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+
+<hr class="featurette-divider" />
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p class="spacey">&#9400; <span class="ratio"> SKOBA.net</span> | 2015 - <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script></p>
+
+            <p>
+              <a href="cv.html"><i class="fa fa-chevron-up"></i> Back to top</a>
+            </p>
+
+        </div>
+      </footer>
+      </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+
+
+  </body>
+</html>

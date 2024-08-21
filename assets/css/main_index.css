@@ -1,0 +1,312 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Roboto|Roboto+Condensed|Roboto+Mono');
+
+@import url(http://fonts.googleapis.com/css?family=Rationale);
+	
+/* Skoba logo */
+
+.ratio {
+    font-family: "Rationale", Helvetica, Arial, sans-serif;
+    font-size:1.5em;
+			}
+
+p {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    }
+
+.text-pre {
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 16px;
+}
+
+
+.blog-header {
+
+  margin-bottom: 20px;
+
+}
+
+.main {
+  margin-top: 90px;}
+
+
+.blog-main {
+
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'PT Sans', sans-serif;
+    background: #1b1b1b;
+}
+
+.bg-title {
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;    
+}
+
+
+.bg-post-title {
+    
+  font-family: 'Roboto Condensed', sans-serif;
+
+  margin-top: 10px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 5px;
+
+  font-size: 40px;
+
+    color: #546e7a;
+
+}
+
+
+.bg-title-small {
+
+  font-size: 50px;
+  text-transform: uppercase;    
+
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+ font-family: 'Roboto Mono', monospace;
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  font-family: 'Roboto Mono', monospace;
+  padding: .25rem 0;
+  font-weight: 100;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 500;
+}
+
+
+/* Nav links */
+
+.blog-nav-item {
+
+  position: relative;
+
+  display: inline-block;
+
+  padding: 10px;
+
+  font-weight: 500;
+
+  color: #cdddeb;
+
+}
+
+.blog-nav-item:hover,
+
+.blog-nav-item:focus {
+
+  color: #fff;
+
+  text-decoration: none;
+
+}
+
+
+
+/* Active state gets a caret at the bottom */
+
+.blog-nav .active {
+
+  color: #fff;
+
+}
+
+.blog-nav .active:after {
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 50%;
+
+  width: 0;
+
+  height: 0;
+
+  margin-left: -5px;
+
+  vertical-align: middle;
+
+  content: " ";
+
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid;
+
+  border-left: 5px solid transparent;
+
+}
+
+
+/* Sidebar modules for boxing content */
+
+.sidebar-module {
+
+  padding: 15px;
+
+  margin: 0 -15px 15px;
+
+}
+
+.sidebar-module-one {
+  background-color: #1c313a;
+}
+.sidebar-module-two {
+  background-color: #34515e;
+}
+.sidebar-module-three {
+  background-color: #62757f;
+}
+
+.sidebar-module-inset p:last-child,
+
+.sidebar-module-inset ul:last-child,
+
+.sidebar-module-inset ol:last-child {
+
+  margin-bottom: 0;
+
+}
+.card-body{ text-align: center}
+
+.card-header
+{ 
+    font-family:  'Roboto Mono', monospace;
+}
+
+
+.card-body
+p { 
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+    
+.me {
+    -webkit-filter: grayscale(90%) contrast(150%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(90%) contrast(150%);
+    margin-bottom: 16px;
+    max-height: 240px;
+            }  
+
+.me-sidebar {
+    -webkit-filter: grayscale(90%) contrast(150%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(90%) contrast(150%);
+    margin-bottom: 16px;
+    width: 100%;
+            }  
+
+.featurette-divider {
+
+  margin: 60px 0; 
+
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  border-top: .25rem solid #8e8e8e;
+  color: rgba(255, 255, 255, .5);
+}
+
+.mastfoot p{
+    margin-top: 16px;
+}

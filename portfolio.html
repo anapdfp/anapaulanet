@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ana Paula Portfolio @ SKOBA.net" />
+  	<meta name="author" content="Ana Paula Pimentel" />
+    <link rel="shortcut icon" href="http://skoba.net/favicon.ico" />
+
+    <title>[Portfolio] Ana Paula Pimentel</title>
+
+Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38295731-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-38295731-3');
+    </script>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/port.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/darkly_port.css" rel="stylesheet">
+	  <link href="assets/css/blog.css" rel="stylesheet">
+   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+	@import url(http://fonts.googleapis.com/css?family=Rationale);
+	.ratio {
+			font-family: "Rationale", Helvetica, Arial, sans-serif;
+			font-size:1.5em;
+			}
+
+        body {
+            position: relative;
+            background-color: #000000;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' stroke-opacity='0.46'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* timeline */
+        /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.tlcontainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.tlcontainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #6c757d;
+  border: 4px solid #1c313a;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.tlcontent {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .tlcontainer {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .tlcontainer::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+	</style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+<div class="navbar navbar-default navbar-fixed-top blog-masthead blog-nav">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav nav-pills">
+            <li>
+              <a class="blog-nav-item" href="index.html"><i class="fa fa-home"></i></a>
+            </li>
+            <li>
+              <a class="blog-nav-item" href="#websites"><i class="fa fa-chevron-right"></i> Websites</a>
+            </li>
+			<li>
+              <a class="blog-nav-item" href="#content"><i class="fa fa-chevron-right"></i> E-learning Content</a>
+            </li>
+			<li>
+              <a class="blog-nav-item" href="#design"><i class="fa fa-chevron-right"></i> Design</a>
+            </li>
+			<li>
+              <a class="blog-nav-item" href="#other"><i class="fa fa-chevron-right"></i> Other</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="cv.html"><i class="fa fa-file-text"></i> Resume</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container blog-main">
+
+      <div class="blog-header">
+
+
+        <h1 class="blog-title"><span class="lead blog-description txt-capital" >[Portfolio]</span> <br>
+        A<span class="blog-title-small">NA</span> P<span class="blog-title-small">AULA</span> P<span class="blog-title-small">IMENTEL</span>      </h1>
+        <p class="lead blog-description txt-capital">
+          Project and Data Management / Front-End and Android Dev / Online Education </p>
+
+
+      </div>
+    	<p>Here you can access some of my Webdesign projects and other things I've done.</p>
+      <p>You can also check my <a href="cv.html">online resume</a>.</p>
+
+
+
+      <div class="row">
+
+        <div class="col-sm-12">
+
+        <section id="websites">
+		  <hr class="featurette-divider" />
+		  <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Websites</h2>
+            <p class="blog-post-meta">Click on the pictures for more information</p>
+
+
+			<div class="row">
+
+        <div class="col-sm-4">
+            <a class="portfolio-link" data-toggle="modal" data-target="#modalOdy">
+              <img alt="" class="img-responsive img-round img-portfolio" src="assets/img/sweetody.jpg" />
+              <h3 class="portfolio-title">Sweet Odyssey</h3>
+      </a>
+    <!-- modal -->
+              <div class="modal fade" id="modalOdy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="portfolio-post-title" id="myModalLabel">Sweet Odyssey - Book website</h4>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/img/sweetody.jpg" class="img-thumbnail pull-right" width="200px">
+                      <h4 class="portfolio-post-subtitle">Description</h4>
+                      <p>Responsive layout developed using Bootstrap framework. </p>
+                      <h4 class="portfolio-post-subtitle">About</h4>
+                      <p>Built as a volunteer work, the goal of the Sweet Odyssey book website is to introduce the incredible Santos family and
+                        promote their non-fiction/memoir book.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a type="button" class="btn btn-success" href="http://sweetodyssey.net" target="blank">Access</a>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /modal -->
+
+          </div>
+          <!-- /col-sm-4 -->
+
+            	<div class="col-sm-4">
+                	<a class="portfolio-link" data-toggle="modal" data-target="#modalTeia">
+                    <img alt="" class="img-responsive img-round img-portfolio" src="http://skoba.net/img/teia.jpg" />
+                    <h3 class="portfolio-title">TEIA</h3>
+				    </a>
+					<!-- modal -->
+                    <div class="modal fade" id="modalTeia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">TEIA - Territorios, Educacao Integral e CidadaniA</h4>
+                          </div>
+                          <div class="modal-body">
+                            <img src="http://skoba.net/img/teia.jpg" class="img-thumbnail pull-right" width="200px">
+                            <h4 class="portfolio-post-subtitle">Description</h4>
+                            <p>Responsive website built with Wordpress. Layout developed using Bootstrap. </p>
+                            <h4 class="portfolio-post-subtitle">About</h4>
+                            <p>TEIA is a research group created in 2008 at the School of Education (FAE) of Minas Gerais Federal University (UFMG) in Brazil.
+                              The group is a network connecting various research activities, teaching and extension in the field of comprehensive education and citizenship.
+                              It is thought out as a space for reflection and intervention aimed at ensuring education as an individual and collective right,
+                              needed for the purpose of a democratic and inclusive society.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a type="button" class="btn btn-success disabled" href="http://teiaufmg.com.br" target="blank">Access</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+                </div>
+                <!-- /col-sm-4 -->
+
+                <div class="col-sm-4">
+                	<a class="portfolio-link" data-toggle="modal" data-target="#modalOJ">
+                	  <img alt="" class="img-responsive img-round img-portfolio" src="http://skoba.net/img/oj.jpg" />
+                      <h3 class="portfolio-title">Observatório da Juventude</h3>
+                    </a>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="modalOJ" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">Observatório da Juventude / UFMG</h4>
+                          </div>
+                          <div class="modal-body">
+                            <img src="http://skoba.net/img/oj.jpg" class="img-thumbnail pull-right" width="200px">
+                            <h4 class="portfolio-post-subtitle">Description</h4>
+                            <p>Responsive website built with Wordpress. Layout developed using Bootstrap. </p>
+                            <h4 class="portfolio-post-subtitle">About</h4>
+                            <p>The Observatório da Juventude (Youth Observatory) is an educational, research and extension program of the UFMG -
+                              Minas Gerais Federal University in Brazil, which carries out research activities concerning the situation of schools
+                              and education of young people in the metropolitan region of Belo Horizonte / Brazil.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="http://observatoriodajuventude.ufmg.br" target="blank">Access</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+                </div>
+                 <!-- /col-sm-4 -->
+
+
+            </div>
+            <!-- /row -->
+
+            <hr class="halfdivider"/>
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                	<a class="portfolio-link" data-toggle="modal" data-target="#modalGeine">
+                    <img alt="" class="img-responsive img-round img-portfolio" src="http://skoba.net/img/geine.jpg" />
+                    <h3 class="portfolio-title">GEINE</h3>
+				    </a>
+					<!-- modal -->
+                    <div class="modal fade" id="modalGeine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">GEINE - Interdisciplinary Study Group on Inclusive Education and Special Educational Needs</h4>
+                          </div>
+                          <div class="modal-body">
+                            <img src="http://skoba.net/img/geine.jpg" class="img-thumbnail pull-right" width="200px">
+                            <h4 class="portfolio-post-subtitle">Description</h4>
+                            <p>Responsive website built with Wordpress. </p>
+                            <h4 class="portfolio-post-subtitle">About</h4>
+                            <p>The GEINE is an Interdisciplinary Study Group on Inclusive Education and Special Educational Needs created in 2002
+                              at the School of Education (FAE) of Minas Gerais Federal University (UFMG) in Brazil.
+                              The group works with the training of teachers for the inclusion of special education target audience in regular schools,
+                              to develop their potential and their full social integration.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a type="button" class="btn btn-success disabled" href="http://geineufmg.com.br" target="blank">Access</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+                </div>
+                <!-- /col-sm-4 -->
+
+                <div class="col-sm-4">
+                	<a class="portfolio-link" data-toggle="modal" data-target="#modalBagagem">
+                	  <img alt="" class="img-responsive img-round img-portfolio" src="assets/img/bagagem-thumb.jpg" />
+                      <h3 class="portfolio-title">Webdoc Bagagem</h3>
+                    </a>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="modalBagagem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">Webdoc Bagagem</h4>
+                          </div>
+                          <div class="modal-body">
+                            <img src="assets/img/bagagem-thumb.jpg" class="img-thumbnail pull-right" width="200px">
+                            <h4 class="portfolio-post-subtitle">Description</h4>
+                            <p>Website handcrafted to host a webdocumentary. Layout developed by me. </p>
+                            <h4 class="portfolio-post-subtitle">About</h4>
+                            <p>The webdoc is the result of a project done by the class of 2011/2012 Postgraduation in Digital Media Production,
+                              at the Institute of Continuing Education (IEC - PUC Minas).</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="http://skoba.net/bagagem/" target="blank">Access</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+                </div>
+                 <!-- /col-sm-4 -->
+
+                 <div class="col-sm-4">
+                 	<a class="portfolio-link" data-toggle="modal" data-target="#modalJuviva">
+                     <img alt="" class="img-responsive img-round img-portfolio" src="http://skoba.net/img/juviva.jpg" />
+                     <h3 class="portfolio-title">JUVIVA</h3>
+                     </a>
+                      <!-- modal -->
+                     <div class="modal fade" id="modalJuviva" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="portfolio-post-title" id="myModalLabel">Update Course JUVIVA / UFMG</h4>
+                           </div>
+                           <div class="modal-body">
+                             <img src="http://skoba.net/img/juviva.jpg" class="img-thumbnail pull-right" width="200px">
+                             <h4 class="portfolio-post-subtitle">Description</h4>
+                             <p>Responsive website built with Joomla. Logo and layout designed by me </p>
+                             <h4 class="portfolio-post-subtitle">About</h4>
+                             <p>The JUVIVA was a Update Course for teachers who worked with youth and adult education in public schools
+                               where the Brazil's Government plan "Juventude Viva" was in action.</p>
+                           </div>
+                           <div class="modal-footer">
+                             <a type="button" class="btn btn-success" href="http://www.skoba.net/juviva-conteudo/index.html" target="blank">Access</a>
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <!-- /modal -->
+                 </div>
+                  <!-- /col-sm-4 -->
+
+
+            </div>    <!-- /row -->
+
+ <hr class="halfdivider"/>
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                	<a class="portfolio-link" data-toggle="modal" data-target="#modaleiiuab">
+                    <img alt="" class="img-responsive img-round img-portfolio" src="http://skoba.net/img/uab.jpg" />
+                    <h3 class="portfolio-title">EII UAB</h3>
+				    </a>
+					<!-- modal -->
+                    <div class="modal fade" id="modaleiiuab" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">Update Course - Full-Time and Integrated Education</h4>
+                          </div>
+                          <div class="modal-body">
+                            <img src="http://skoba.net/img/uab.jpg" class="img-thumbnail pull-right" width="200px">
+                            <h4 class="portfolio-post-subtitle">Description</h4>
+                            <p>Responsive website built with Bootstrap. </p>
+                            <h4 class="portfolio-post-subtitle">About</h4>
+                            <p>The main objective of the course was to train teachers of basic education, educational managers and other
+                              education professionals in the theoretical and practical assumptions of the full-time Education.
+                              The course was sponsored by Universidade Aberta do Brasil / Open University of Brazil (UAB).</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="http://www.skoba.net/teia/uab/" target="blank">Access</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+                </div>
+                <!-- /col-sm-4 -->
+
+                <div class="col-sm-4">
+                	<a class="portfolio-link" data-toggle="modal" data-target="#modalJubemi">
+                	  <img alt="" class="img-responsive img-round img-portfolio" src="http://skoba.net/img/jubemi.jpg" />
+                      <h3 class="portfolio-title">JUBEMI</h3>
+                    </a>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="modalJubemi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">JUBEMI - Brazilian Youth and High School Innovative Extention Course</h4>
+                          </div>
+                          <div class="modal-body">
+                            <img src="http://skoba.net/img/jubemi.jpg" class="img-thumbnail pull-right" width="200px">
+                            <h4 class="portfolio-post-subtitle">Description</h4>
+                            <p>Responsive website built with Bootstrap. Layout and art developed by me. </p>
+                            <h4 class="portfolio-post-subtitle">About</h4>
+                            <p>JUBEMI is a Update Course with the main objective of providing information and data for teachers to reflect about the high school
+                              and the issues that refer to young students. JUBEMI was developed by Observatorio da Juventude (UFMG and UFF)
+                              together with the Brazilian Ministry of Education.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="http://skoba.net/jubemi/" target="blank">Access</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+                </div>
+                 <!-- /col-sm-4 -->
+
+
+                 <div class="col-sm-4">
+                 	<a class="portfolio-link" data-toggle="modal" data-target="#modalCidade">
+                     <img alt="" class="img-responsive img-round img-portfolio" src="http://skoba.net/img/eiec.jpg" />
+                     <h3 class="portfolio-title">Escola e Cidade</h3>
+                     </a>
+                      <!-- modal -->
+                     <div class="modal fade" id="modalCidade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="portfolio-post-title" id="myModalLabel">Full-Time Education: The School and the City</h4>
+                           </div>
+                           <div class="modal-body">
+                             <img src="http://skoba.net/img/eiec.jpg" class="img-thumbnail pull-right" width="200px">
+                             <h4 class="portfolio-post-subtitle">Description</h4>
+                             <p>Responsive website built with Joomla. Logo and layout designed by me </p>
+                             <h4 class="portfolio-post-subtitle">About</h4>
+                             <p>The course "Full-Time Education: School and the City", developed and executed by TEIA,
+                               aimed to offer teachers, cultural workers, workshop instructors, managers, and other professionals of education,
+                               conditions reflect on the conceptions about the extension of the school day and the implications
+                               of this expansion in the scope of public policies in education.</p>
+                           </div>
+                           <div class="modal-footer">
+                             <a type="button" class="btn btn-success" href="http://www.skoba.net/teia/escolaecidade/index.html" target="blank">Access</a>
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <!-- /modal -->
+                 </div>
+                  <!-- /col-sm-4 -->
+
+
+
+            </div>    <!-- /row -->
+
+
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+		  <section id="content">
+		  <hr class="featurette-divider" />
+          <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> E-learning content</h2>
+            <p class="blog-post-meta">Some media transposition works I've done </p>
+
+            <div class="row">
+
+    <div class="col-sm-6">
+      <h3 class="portfolio-title">TEIA</h3>
+      <hr>
+
+                  <h4><i class="fa fa-chevron-right"></i> EII GV 2012 <br>
+                    <small>The first online course developed by me for UFMG research group TEIA. (Content in Brazilian Portuguese)</small></h4>
+                    <ul>
+                      <li><a href="http://www.skoba.net/teia/EII_GV/" target="_blank">Modules</a></li>
+                    </ul>
+<br />
+
+                  <h4><i class="fa fa-chevron-right"></i> Update Course "Escola e Cidade"<br>
+                    <small>Responsive, fixed sidebar to make navigation easier, multimedia features, tested in all browsers. (Content in Brazilian Portuguese) </small></h4>
+                    <ul>
+                      <li><a href="http://www.skoba.net/teia/escolaecidade/01-01.html" target="_blank">Module 1</a></li>
+                      <li><a href="http://www.skoba.net/teia/escolaecidade/02-01.html" target="_blank">Module 1</a></li>
+                      <li><a href="http://www.skoba.net/teia/escolaecidade/03-01.html" target="_blank">Module 1</a></li>
+                    </ul>
+<br />
+
+                  <h4><i class="fa fa-chevron-right"></i> Online course "Educação Integral e Integrada" <br>
+                    <small>Clean design, responsive, suitable to e-learning plataforms, multimedia features, tested in all browsers (Content in Brazilian Portuguese) </small></h4>
+                    <ul>
+                      <li><a href="http://www.skoba.net/teia/uab/conteudo/modulo01/01_01_01.html" target="_blank">Module 1</a></li>
+                      <li><a href="http://www.skoba.net/teia/uab/conteudo/modulo02/02_01_01.html" target="_blank">Module 2</a></li>
+                      <li><a href="http://www.skoba.net/teia/uab/conteudo/modulo03/03_01_01.html" target="_blank">Module 3</a></li>
+                    </ul>
+
+<br />
+    </div><!-- /col-sm-6 -->
+
+    <div class="col-sm-6">
+      <h3 class="portfolio-title">Observatório da Juventude</h3>
+      <hr>
+
+                  				<h4><i class="fa fa-chevron-right"></i> Update Course JUVIVA <br>
+                  				<small>Responsive, fixed sidebar to make navigation easier, multimedia features, tested in all browsers. (Content in Brazilian Portuguese)</small></h4>
+                                     	<ul>
+                                      	<li><a href="http://observatoriodajuventude.ufmg.br/juviva-conteudo/01-01.html" target="_blank">Module 1</a></li>
+                                          <li><a href="http://observatoriodajuventude.ufmg.br/juviva-conteudo/02-01.html" target="_blank">Module 2</a></li>
+                                          <li><a href="http://observatoriodajuventude.ufmg.br/juviva-conteudo/03-01.html" target="_blank">Module 3</a></li>
+                                      </ul>
+                                  	<br />
+                  				<h4><i class="fa fa-chevron-right"></i> Update Course JUBEMI <br>
+                  				<small>The first online course developed by me for UFMG research group Observatório da Juventude. (Content in Brazilian Portuguese)</small></h4>
+                                  	<ul>
+                                      	<li><a href="http://www.skoba.net/jubemi/geral-conteudo.html" target="_blank">Videos and pdfs</a></li>
+                                        <li><a href="http://www.skoba.net/jubemi/conteudo" target="_blank">Modules</a></li>
+                                      </ul>
+                                      <br />
+
+
+					</div><!-- /col-sm-6 -->
+
+
+
+			</div>    <!-- /row -->
+
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+		  <section id="design">
+		  <hr class="featurette-divider" />
+          <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Design</h2>
+            <p class="blog-post-meta">Some of my art, sketches, layouts.</p>
+
+
+            <ul>
+				<h4 class="txt-capital"><i class="fa fa-chevron-right"></i> Logos</h4>
+
+
+                <div class="row">
+                   <div class="col-sm-6 col-md-4">
+
+                    <div class="thumbnail">
+                      <img src="assets/img/pacto.png" alt="Pacto MG" width="300">
+                      <div class="caption">
+                        <h3>Pacto-MG</h3>
+                        <p>Logo of Pacto, a government program to promote educational process that values and involves teachers of High School in Minas Gerais State, as well as managers and teaching staff of the State Department of Education of Minas Gerais, thus contributing to the improvement of quality of this level of education. </p>
+                       </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                      <img src="assets/img/logobaggd3.png" alt="Pacto MG" width="300">
+                      <div class="caption">
+                        <h3>Webdoc Bagagem</h3>
+                        <p>Logo of Bagagem Webdocumentary. Bagagem in portuguese means "luggage" and the name of the building from which the documentary is about is Maleta, that means "suitcase". The name as well as the logo works as a pun.</p>
+                       </div>
+                    </div>
+                   </div>
+
+                   <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                      <img src="assets/img/escolaecidade-in.png" alt="Escola e cidade">
+                      <div class="caption">
+                        <h3>Escola e Cidade</h3>
+                        <p>Logo of the online course "Full-Time Education: the School and the City". The theme of the course is how to use the city as an educational resource, so, the logo displays links connected to form buildings, in a reference of city. </p>
+                       </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                 <div class="row">
+                <div class="col-sm-6 col-md-4">
+
+                    <div class="thumbnail">
+                      <img src="http://skoba.net/img/blk-icon.png" alt="Skoba.net" width="200">
+                      <div class="caption">
+                        <h3>Skoba.net</h3>
+                        <p>Logo of Skoba.net which means hook, staple, cramp in many slavics languages. The idea of Skoba.Net is providing technical support to IT issues.</p>
+                       </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                       <img src="assets/img/juviva-m.png" alt="Juviva" width="250">
+                      <div class="caption">
+                        <h3>JUVIVA</h3>
+                        <p>Logo of JUVIVA Update Course in which I used the colors of the original project "Juventude Viva" by Brazilian federal government and joined them together using a symbol that represents unity and at the same time give the idea of a link.</p>
+                       </div>
+                    </div>
+                   </div>
+
+                   <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                       <img src="assets/img/jubemi.png" alt="Jubemi" width="250">
+                      <div class="caption">
+                        <h3>JUBEMI</h3>
+                        <p>Logo of JUBEMI Update Course using the course layout color (orange) and the idea of the mosaic (two mosaic pieces), which permeates the course's theme and methodology.</p>
+                       </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+			  <hr class="halfdivider"/>
+
+				<h4 class="txt-capital"><i class="fa fa-chevron-right"></i> Wireframes</h4>
+                	<ul>
+						<li>Website WMW - WikeMetaWeb: Access on <a href="https://prezi.com/66kwhbdfjzmt/wmw-wikemetaweb/" target="_blank">Prezi</a></li>
+						<li><a class="portfolio-link" data-toggle="modal" data-target="#modalMotoway">Mobile App Motoway</a> </li>
+
+
+
+                         <!-- modal -->
+                    <div class="modal fade" id="modalMotoway" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">Mobile App Motoway (Project)</h4>
+                          </div>
+                          <div class="modal-body">
+                          <p>Wireframe for a theoretical mobile app of Motorcycle trails, planned as a college project.</p>
+                            <img src="assets/img/wfmotoway/00splash.jpg" width="160" alt="splash">
+                            <img src="assets/img/wfmotoway/01LOGIN.jpg" width="160" alt="login">
+                            <img src="assets/img/wfmotoway/02HOME.jpg" width="160" alt="home">
+                            <img src="assets/img/wfmotoway/03ROTA.jpg" width="160" alt="route">
+                            <img src="assets/img/wfmotoway/04NOVAROTA.jpg" width="160" alt="new route">
+                            <img src="assets/img/wfmotoway/05REPORTAR.jpg" width="160" alt="report">
+                            <img src="assets/img/wfmotoway/06REPORTAROUTROS.jpg" width="160" alt="report other">
+                            <img src="assets/img/wfmotoway/07NOVAROTAOK.jpg" width="160" alt="ok">
+                            <img src="assets/img/wfmotoway/08SALVAR.jpg" width="160" alt="save">
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+
+					</ul>
+
+			   <hr class="halfdivider"/>
+
+				<h4 class="txt-capital"><i class="fa fa-chevron-right"></i> Mockups/Layouts</h4>
+					<ul>
+						<li><a class="portfolio-link" data-toggle="modal" data-target="#modalVrum">Mobile App Vrum</a></li>
+                           <!-- modal -->
+                    <div class="modal fade" id="modalVrum" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">Mobile App Vrum</h4>
+                          </div>
+                          <div class="modal-body">
+                          <p>Mockup of a car classifieds app</p>
+                        	<img src="assets/img/mockupsvrum/01loginA1.jpg" width="240" alt="login1">
+                            <img src="assets/img/mockupsvrum/01loginB1.jpg" width="240" alt="login">
+                            <img src="assets/img/mockupsvrum/02localA.jpg" width="240" alt="home">
+                            <img src="assets/img/mockupsvrum/04fabricante.jpg" width="240" alt="route">
+                            <img src="assets/img/mockupsvrum/05modelobase.jpg" width="240" alt="new route">
+                            <img src="assets/img/mockupsvrum/07anofabmodA.jpg" width="240" alt="report">
+                            <img src="assets/img/mockupsvrum/13opcionaisA.jpg" width="240" alt="report other">
+                            <img src="assets/img/mockupsvrum/17fotosB.jpg" width="240" alt="save">
+                            </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+                    <li><a class="portfolio-link" data-toggle="modal" data-target="#modalFleury">Mobile App/Site Laboratórios Fleury</a></li>
+                    <!-- modal -->
+                    <div class="modal fade" id="modalFleury" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">Mobile App/Site Laboratórios Fleury</h4>
+                          </div>
+                          <div class="modal-body">
+                          <p>Layout and usability for both, mobile app and website</p>
+                        	<img src="assets/img/fleuryapp.png" alt="Fleury">
+                            </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+
+                    <li><a class="portfolio-link" data-toggle="modal" data-target="#modalprimeira">Mobile website Primeira Mão</a></li>
+                    <!-- modal -->
+                    <div class="modal fade" id="modalprimeira" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="portfolio-post-title" id="myModalLabel">Mobile Site Primeira Mão</h4>
+                          </div>
+                          <div class="modal-body">
+                          <p>Mobile Website for Primeira Mão, an e-commerce company</p>
+                        	<img src="assets/img/primeiramaoapp.png" alt="Primeira Mão">
+                            </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+
+
+					</ul>
+			</ul>
+
+
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+
+		  <section id="other">
+		  <hr class="featurette-divider" />
+          <div class="blog-post">
+            <h2 class="blog-post-title txt-capital"><i class="fa fa-chevron-right"></i> Things I authored and co-authored </h2>
+            <p class="blog-post-meta"></p>
+            <ul>
+              <h4 class="txt-capital"><i class="fa fa-chevron-right"></i> Dissertation: Cascade effect on Tumblr: The diffusion of information on a complex network</h4>
+                  <p>Year: 2012</p>
+                  <p>This study aimed to apply some concepts of complex networks and theory of hyperinfluentials (Watts & Doods, 2007)
+                    in the proliferation dynamics of published and reblogged posts on the social network Tumblr.</p>
+                  <a class="btn btn-success" href="https://docs.google.com/document/d/e/2PACX-1vRbBAyTOWXMtEJgaVDgbWCQn1qKlzMwmQTaYwRQTYossoMH3VNOEL8Klf20TQq4dgNtWIVZbtgnlrf5/pub" target="_blank">Access here</a></p>
+
+
+                  <hr class="halfdivider"/>
+
+                 <h4 class="txt-capital"><i class="fa fa-chevron-right"></i> Booklet: Educação Integral e Integrada - Introdução ao Moodle</h4>
+                   <p>Year: 2010</p>
+                   <p>A Moodle platform tutorial with didactic resources and e-learning tips - ISBN 978-85-8007-022-4 (2010)</p>
+                   <a class="btn btn-success" href="http://www.skoba.net/teia/uab/livretossss/Anexos/LivretoModuloI.pdf" target="_blank">Access here</a>
+
+
+        		   <hr class="halfdivider"/>
+
+              <h4 class="txt-capital"><i class="fa fa-chevron-right"></i> Book: Panorama dos quadrinhos contemporâneos na Alemanha</h4>
+                <p>Year: 2009</p>
+                <p>This book is the result of an academic work by the Faculty of Arts at UFMG, which brings together a selection of 17 German authors
+                  that are new to the Brazilian public, but consecrated in their country of origin. - ISBN – 978-85-98387-12-3</p>
+                <a class="btn btn-success" href="https://www.ufmg.br/online/arquivos/anexos/panorama-hq-alemanha.pdf" target="_blank">Access here</a>
+
+            <hr class="halfdivider"/>
+
+            <h4 class="txt-capital"><i class="fa fa-chevron-right"></i> Dissertation: Informações culturais na Internet: Possibilidades para o Jornalismo Cultural</h4>
+            <p>Year: 2006</p>
+             <p>Esta pesquisa estuda as formas de mediações sociais ambientadas na Internet e suas implicações na construção da notícia em websites de caráter cultural.
+                Interessa, especificamente, compreender em que medidas estes se diferenciam da linguagem e dos parâmetros editoriais típicos do jornalismo cultural
+                impresso. </p>
+               <a class="btn btn-success" href="https://docs.google.com/document/d/e/2PACX-1vSkZkfEreGKO0f_GcOK86cqyaux5KxuETpkzgbeAMb8wLM_NDlmmHqjswaA63uWlLzLtp8F2FLpBiIc/pub" target="_blank">Access here</a>
+
+            </ul>
+
+          </div><!-- /.blog-post -->
+		  </section>
+
+
+
+
+        </div><!-- /.blog-main -->
+
+
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>&#9400;<span class="ratio"> SKOBA.net</span> - 2015 <br>
+		<small>Template built by <a href="index.html">AnaPaula</a> using <a href="http://getbootstrap.com">Bootstrap</a>.</small>
+	  </p>
+      <p>
+        <a href="portfolio.html"><i class="fa fa-chevron-up"></i> Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- modal JavaScript -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+    <script type="text/javascript">
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+    })
+    </script>
+  </body>
+</html>
