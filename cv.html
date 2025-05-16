@@ -38,7 +38,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Rationale);
 
+body {
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' stroke-opacity='0.46'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+        }
 
+/* Links */
+a {
+    color: #0ce3ac;
+    text-decoration: none
+}
+
+a:hover,a:focus {
+    color: #46f5c8;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+.txt-capital {
+          font-family: 'Roboto Condensed', sans-serif;
+          margin-top: 10px;
+          text-transform: uppercase;
+        }
 
 /* Nav links */
 .blog-nav-item {
@@ -78,21 +106,8 @@
 .nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{color:#ffffff;background-color:#00bc8c}
 
 
-
-body {
-  position: relative;
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' stroke-opacity='0.46'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        .txt-capital {
-          font-family: 'Roboto Condensed', sans-serif;
-          margin-top: 10px;
-          text-transform: uppercase;
-        }
-
-        /* timeline */
-        /* The actual timeline (the vertical ruler) */
+/* timeline */
+/* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -633,8 +648,8 @@ Dreamweaver)</p>
           <div class="sidebar-module sidebar-module-two">
             <h4 class="txt-capital">Elsewhere</h4>
             <ol class="list-unstyled">
-              <li><a href="portfolio.html"><i class="fa fa-file-image-o"></i> Portfolio</a></li>
-			  <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/anapp/" target="_blank">LinkedIn</a></li>
+              <li><i class="fa fa-file-image-o"></i> <a href="portfolio.html">Portfolio</a></li>
+			        <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/anapp/" target="_blank">LinkedIn</a></li>
               <li><i class="fa fa-github-alt"></i> <a href="https://github.com/anapdfp/" target="_blank">GitHub</a></li>
 
             </ol>
